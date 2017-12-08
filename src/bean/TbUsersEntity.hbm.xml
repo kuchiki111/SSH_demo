@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="bean.TbUsersEntity" table="tb_users" schema="dingcan">
+        <id name="id">
+            <column name="Id" sql-type="int(10)"/>
+        </id>
+        <property name="workId">
+            <column name="WorkId" sql-type="varchar(0)" not-null="true"/>
+        </property>
+        <property name="userName">
+            <column name="UserName" sql-type="varchar(0)" not-null="true"/>
+        </property>
+        <property name="password">
+            <column name="Password" sql-type="varchar(0)" not-null="true"/>
+        </property>
+        <property name="trueName">
+            <column name="TrueName" sql-type="varchar(0)" not-null="true"/>
+        </property>
+        <property name="roleId">
+            <column name="RoleId" sql-type="int(10)"/>
+        </property>
+        <property name="departmentId">
+            <column name="DepartmentId" sql-type="int(10)"/>
+        </property>
+        <property name="phoneNumber">
+            <column name="PhoneNumber" sql-type="varchar(0)" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
